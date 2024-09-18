@@ -3,190 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aceleramos o crescimento da sua empresa com soluções práticas e personalizadas.">
-    <title>Fluowen - Consultoria para Pequenas e Médias Empresas</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fluowen - Consultoria Empresarial</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
             color: #333;
         }
+
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
+            background-color: #f0f4f8;
             text-align: center;
+            padding: 30px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+
+        header img {
+            width: 200px;
+            height: auto;
         }
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-        }
-        .cta-button {
-            background-color: #ff6f61;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 15px;
-        }
-        .cta-button:hover {
-            background-color: #e65c53;
-        }
+
         section {
-            padding: 50px 20px;
+            position: relative;
+            padding: 100px 20px;
             text-align: center;
+            color: white;
+            font-size: 1.5em;
         }
+
+        section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
         section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #4CAF50;
+            font-size: 2.5em;
+            color: #fff;
+            z-index: 2;
+            position: relative;
         }
+
         section p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
+            z-index: 2;
+            position: relative;
+            margin-top: 20px;
         }
-        .benefits, .services, .testimonials {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+
+        section.bg1 {
+            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        .benefits div, .services div, .testimonials div {
-            flex: 1;
-            padding: 20px;
-            max-width: 300px;
+
+        section.bg2 {
+            background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        .benefits div img, .services div img, .testimonials div img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
+
+        section.bg3 {
+            background-image: url('https://images.unsplash.com/photo-1565120130296-d0c9e58e02a6?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        .form-section {
-            background-color: #333;
-            color: white;
-            padding: 50px 20px;
+
+        section.bg4 {
+            background-image: url('https://images.unsplash.com/photo-1532074205216-dc141b9a30e8?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
         }
-        .form-section h2 {
-            color: #ff6f61;
-        }
-        .form-section form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        .form-section form input, .form-section form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        .form-section form button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
-            border: none;
-            width: 100%;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
-        .form-section form button:hover {
-            background-color: #45a049;
-        }
+
         footer {
-            background-color: #333;
+            background-color: #1e3a8a;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-        }
-        footer p {
-            margin: 0;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com o logo -->
     <header>
-        <h1>Fluowen</h1>
-        <p>Aceleramos o Crescimento da Sua Empresa com Expertise de Multinacionais</p>
-        <a href="#form-section" class="cta-button">Agende uma Consultoria Gratuita</a>
+        <img src="fluowen.png" alt="Logo Fluowen">
     </header>
 
-    <!-- Apresentação -->
-    <section>
+    <!-- Seção 1: Quem Somos -->
+    <section class="bg1">
+        <div class="overlay"></div>
         <h2>Quem Somos</h2>
-        <p>Na Fluowen, ajudamos pequenos e médios negócios a crescerem com soluções práticas e personalizadas, aplicando as melhores práticas de grandes multinacionais. Nosso diferencial está na execução das estratégias que traçamos.</p>
-        <img src="https://images.unsplash.com/photo-1516705146801-31c8bfc3e1e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fGNvbnN1bHRpbmd8ZW58MHx8fHwxNjk2ODc5ODI0&ixlib=rb-1.2.1&q=80&w=1080" alt="Profissionais em uma reunião de negócios">
+        <p>A Fluowen é uma empresa de consultoria dedicada a proporcionar inovação e soluções seguras para pequenas e médias empresas, ajudando a escalar seus negócios.</p>
     </section>
 
-    <!-- Benefícios -->
-    <section class="benefits">
-        <h2>Por que Escolher a Fluowen?</h2>
-        <div>
-            <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Experiência">
-            <p>Experiência em grandes multinacionais aplicada ao seu negócio.</p>
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1596079890675-e9b7ef8b57a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Consultoria Personalizada">
-            <p>Consultoria personalizada e foco em resultados práticos.</p>
-        </div>
-        <div>
-            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Execução Estratégica">
-            <p>Atuação direta na execução das estratégias de crescimento.</p>
-        </div>
-    </section>
-
-    <!-- Serviços -->
-    <section class="services">
+    <!-- Seção 2: Nossos Serviços -->
+    <section class="bg2">
+        <div class="overlay"></div>
         <h2>Nossos Serviços</h2>
-        <div>
-            <img src="https://images.unsplash.com/photo-1532074205216-d0e1f2c4b7ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHBsYW5uaW5nfGVufDB8fHx8MTY5Njg3OTgzMg&ixlib=rb-1.2.1&q=80&w=1080" alt="Análise de Processos">
-            <p>Análise de Processos</p>
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1554160402-6f10fc8cf2a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGZpbmFuY2V8ZW58MHx8fHwxNjk2ODc5ODI0&ixlib=rb-1.2.1&q=80&w=1080" alt="Consultoria Financeira">
-            <p>Consultoria Financeira e Tributária</p>
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1581093588411-cab47298d660?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDh8fHBsYW5uaW5nfGVufDB8fHx8MTY5Njg3OTgyMw&ixlib=rb-1.2.1&q=80&w=1080" alt="Estruturação de Custos">
-            <p>Estruturação de Custos e Preços</p>
-        </div>
-        <div>
-            <img src="https://images.pexels.com/photos/3184290/pexels-photo-3184290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Crescimento de Vendas">
-            <p>Consultoria em Crescimento de Vendas</p>
-        </div>
+        <p>Oferecemos consultoria empresarial com foco em tecnologia e inovação, ajudando empresas a modernizarem seus processos e atingirem novos patamares de sucesso.</p>
     </section>
 
-    <!-- Depoimentos -->
-    <section class="testimonials">
-        <h2>O Que Nossos Clientes Dizem</h2>
-        <div>
-            <img src="https://images.unsplash.com/photo-1602526207093-0ab94e1c4e1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDZ8fGN1c3RvbWVyfGVufDB8fHx8MTY5Njg3OTgzMQ&ixlib=rb-1.2.1&q=80&w=1080" alt="Cliente">
-            <p>"A Fluowen transformou nosso processo de vendas e aumentou nossa eficiência em 30%!" - João, Empreendedor</p>
-        </div>
-        <div>
-            <img src="https://images.unsplash.com/photo-1573496541988-9c92a70083b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGN1c3RvbWVyfGVufDB8fHx8MTY5Njg3OTgyNw&ixlib=rb-1.2.1&q=80&w=1080" alt="Cliente">
-            <p>"O suporte da Fluowen na estruturação de custos foi essencial para alcançarmos novos patamares." - Maria, Empresária</p>
-        </div>
+    <!-- Seção 3: Nossa Equipe -->
+    <section class="bg3">
+        <div class="overlay"></div>
+        <h2>Nossa Equipe</h2>
+        <p>Contamos com uma equipe multidisciplinar, altamente capacitada e pronta para oferecer as melhores soluções para o seu negócio.</p>
     </section>
 
-    <!-- Formulário de Contato -->
-    <section class="form-section" id="form-section">
-        <h2>Entre em Contato</h2>
-        <form>
-            <input type="text" name="name" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+    <!-- Seção 4: Estratégia e Planejamento -->
+    <section class="bg4">
+        <div class="overlay"></div>
+        <h2>Estratégia e Planejamento</h2>
+        <p>Trabalhamos com uma abordagem estratégica, analisando o mercado e aplicando práticas inovadoras para garantir o crescimento sustentável da sua empresa.</p>
     </section>
 
     <!-- Rodapé -->
