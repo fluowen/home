@@ -1,13 +1,7 @@
-body, html {
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.navbar {
-    padding: 20px;
 }
 
 .section {
@@ -15,23 +9,57 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96%;
-    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
 }
 
-.contact-button {
+.bg-primary {
+    background-color: #f8f9fa;
+}
+
+.bg-secondary {
+    background-color: #343a40;
+    color: white;
+}
+
+.bg-gray {
+    background-color: #d1d1d1;
+}
+
+.logo {
+    height: 50px;
+}
+
+.navbar {
+    background-color: #d1d1d1;
+}
+
+.nav-link {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.contact-btn {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 10%;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 1000;
 }
 
-.footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.service-item {
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-weight: 700;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-contact {
+    color: #333;
+    text-decoration: none;
 }
