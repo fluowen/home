@@ -1,7 +1,8 @@
+/* Define margens para impedir sobreposição */
 body {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 60px; /* Compensa a barra de navegação fixa */
 }
 
 .section {
@@ -11,6 +12,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 2%;
+    box-sizing: border-box; /* Garante que padding seja incluído no tamanho da seção */
 }
 
 .bg-primary {
@@ -26,13 +28,18 @@ body {
     background-color: #d1d1d1;
 }
 
+/* Ajusta o tamanho do logo */
 .logo {
-    height: 50px; /* Tamanho proporcional do logo na barra de navegação */
+    height: 50px;
     max-width: 150px;
 }
 
 .navbar {
     background-color: #d1d1d1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-link {
@@ -40,6 +47,7 @@ body {
     margin-left: 20px;
 }
 
+/* Posiciona o botão sobre o carrossel */
 .contact-btn {
     position: absolute;
     top: 50%;
@@ -48,24 +56,38 @@ body {
     transform: translateY(-50%);
 }
 
+/* Corrige layout dos itens de serviço para não sobreporem */
 .service-item {
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    text-align: left;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 .service-title {
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .footer-logo {
-    height: 50px; /* Tamanho proporcional do logo no rodapé */
-    max-width: 150px;
+    height: 50px;
 }
 
 .footer-contact {
     color: #333;
     text-decoration: none;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
 }
