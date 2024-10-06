@@ -1,32 +1,37 @@
-body {
-    font-family: 'Montserrat', 'Roboto', sans-serif;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 20px;
 }
 
 .section {
-    padding: 50px 0;
-    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
 }
 
-.contact-btn {
+.contact-button {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
-#servicos .service-title {
-    font-weight: bold;
-    margin-top: 20px;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .footer {
-    padding: 20px 0;
-}
-
-.carousel-inner img {
-    width: 96%;
-    height: 96vh;
-    object-fit: cover;
+    background-color: #f8f9fa;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
