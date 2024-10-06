@@ -42,13 +42,16 @@ body {
 .contact-btn {
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    left: 10px;
     z-index: 1000;
+    transform: translateY(-50%);
 }
 
 .service-item {
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .service-title {
