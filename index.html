@@ -1,118 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Corrigida</title>
-    <!-- Link for Montserrat Font and Bootstrap -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Landing Page Fluowen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="img/fluowen.jpg" alt="Logo" style="width: 50px; height: 50px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#services">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" href="#contact">Contato</a>
-                </li>
-            </ul>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://fluowen.github.io/home/img/fluowen.jpg" alt="Fluowen Logo">
         </div>
+        <ul class="nav-links">
+            <li><a href="#sobre-nos">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
 
-    <!-- Carrossel Section -->
-    <section class="carousel-section">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <!-- Seção Sobre Nós -->
+    <section id="sobre-nos" class="section about-us">
+        <div class="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/img01.jpg" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/img02.jpg" class="d-block w-100" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/img03.jpg" class="d-block w-100" alt="Slide 3">
-                </div>
+                <img src="https://github.com/fluowen/home/blob/main/img/img01.jpg" alt="Imagem 1">
+                <img src="https://github.com/fluowen/home/blob/main/img/img02.jpg" alt="Imagem 2">
+                <img src="https://github.com/fluowen/home/blob/main/img/img03.jpg" alt="Imagem 3">
             </div>
-            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
         </div>
-        <!-- Contact Floating Button -->
-        <a href="#contact" class="btn btn-primary btn-contato">Contato</a>
+        <a href="https://wa.me/5511985863538" class="btn-contact" target="_blank">Entre em Contato</a>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container-fluid">
-            <!-- Sub-section 1 -->
-            <div class="row no-gutters align-items-center mb-5">
-                <div class="col-md-6">
-                    <img src="img/img04.jpg" alt="Serviço 1" class="img-fluid">
-                </div>
-                <div class="col-md-6 text-left">
-                    <h2 class="font-weight-bold">Serviço 1</h2>
-                    <p>Descrição do serviço 1.</p>
-                </div>
-            </div>
-            <!-- Sub-section 2 -->
-            <div class="row no-gutters align-items-center mb-5">
-                <div class="col-md-6 order-md-2">
-                    <img src="img/img05.jpg" alt="Serviço 2" class="img-fluid">
-                </div>
-                <div class="col-md-6 text-right">
-                    <h2 class="font-weight-bold">Serviço 2</h2>
-                    <p>Descrição do serviço 2.</p>
-                </div>
-            </div>
-            <!-- Sub-section 3 -->
-            <div class="row no-gutters align-items-center">
-                <div class="col-md-6">
-                    <img src="img/img06.jpg" alt="Serviço 3" class="img-fluid">
-                </div>
-                <div class="col-md-6 text-left">
-                    <h2 class="font-weight-bold">Serviço 3</h2>
-                    <p>Descrição do serviço 3.</p>
-                </div>
-            </div>
+    <!-- Seção Serviços -->
+    <section id="servicos" class="section services">
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Serviço 1">
+            <h3>Serviço 1</h3>
+            <p>Descrição do serviço 1.</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Serviço 2">
+            <h3>Serviço 2</h3>
+            <p>Descrição do serviço 2.</p>
+        </div>
+        <div class="service">
+            <img src="https://via.placeholder.com/300" alt="Serviço 3">
+            <h3>Serviço 3</h3>
+            <p>Descrição do serviço 3.</p>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="d-flex justify-content-center align-items-center">
-            <img src="img/fluowen.jpg" alt="Logo" style="width: 50px; height: 50px;">
-            <a href="https://wa.me/5511915954848" target="_blank" class="ml-3">
-                <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 24px; height: 24px;">
-            </a>
-            <a href="mailto:contact@fluowen.com" class="ml-3">
-                <img src="img/email-icon.png" alt="Email" style="width: 24px; height: 24px;">
-            </a>
-        </div>
+    <!-- Seção Contato -->
+    <section id="contato" class="section contact">
+        <h2>Entre em Contato</h2>
+        <form action="https://formspree.io/f/mqkwkzbr" method="POST">
+            <input type="text" name="name" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="message" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Fluowen. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
