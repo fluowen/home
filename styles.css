@@ -6,11 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    margin: 0;
-    padding: 0;
-}
-
 /* Barra de Navegação */
 .navbar-nav .nav-link {
     font-weight: 700; /* Negrito nos itens da barra de navegação */
@@ -31,6 +26,7 @@ section {
     padding: 0;
     margin-bottom: 50px;
     overflow: hidden;
+    position: relative; /* Necessário para o botão flutuante */
 }
 
 .carousel {
@@ -45,6 +41,19 @@ section {
     object-fit: cover;
 }
 
+/* Botão flutuante sobre o carrossel */
+.btn-contato {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 /* Seção de Serviços */
 .services-section {
     padding: 0;
@@ -54,13 +63,14 @@ section {
 }
 
 .services-section .row {
-    width: 100%; /* As sub-seções ocupam 100% da largura */
-    margin: 0;
+    width: 96%; /* As sub-seções ocupam 96% da largura */
+    margin: auto;
+    height: 100vh; /* Cada sub-seção ocupa 1 página */
 }
 
 .services-section .img-fluid {
     width: 100%;
-    height: 100vh; /* As imagens ocupam 100% da altura da tela */
+    height: 100%;
     object-fit: cover; /* Garante que as imagens preencham corretamente */
 }
 
@@ -83,10 +93,6 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: #5eb71b;
-}
-
-footer a:hover {
-    text-decoration: underline;
+footer img {
+    margin: 0 10px;
 }
