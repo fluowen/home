@@ -1,37 +1,37 @@
+/* Estilo global */
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evitar scroll horizontal */
 }
 
-.fixed-button {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+/* Barra de Navegação */
+.navbar {
+  background-color: #004080; /* Cor de fundo da barra de navegação */
 }
 
-.carousel-inner img {
-  height: 100vh;
-  object-fit: cover;
+.nav-link {
+  font-size: 1.2rem;
+  color: #fff !important;
 }
 
-h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-footer {
-  padding: 0 2%;
-}
-/* Garantir que a seção ocupe 100% da página e o conteúdo ocupe 96% */
+/* Garantir que a seção Sobre Nós ocupe 100% da página e o conteúdo ocupe 96% */
 #about {
   height: 100vh;
+  background-color: #F0F0F0;
 }
 
 .about-container {
   width: 96%;
-  max-height: 100%;
+  height: 100%;
   padding: 0;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start; /* Alinha conteúdo à esquerda */
+  position: relative;
 }
 
 /* Garantir que as imagens do carrossel tenham o mesmo tamanho */
@@ -44,14 +44,95 @@ footer {
   object-fit: cover; /* Redimensiona e corta as imagens conforme necessário */
 }
 
-/* Garantir que o botão esteja sempre no mesmo lugar */
-.fixed-button {
+/* Reposicionar e estilizar o botão Entre em Contato */
+.btn-contact {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #28a745; /* Cor de acordo com a identidade visual */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Evitar invasão de conteúdo */
+.btn-contact:hover {
+  background-color: #218838;
+  color: white;
+  text-decoration: none;
+}
+
+/* Serviços */
+#services {
+  height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.container .row {
+  margin-bottom: 3rem;
+}
+
+.container .row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+#footer {
+  background-color: #004080; /* Cor de fundo do rodapé */
+  color: white;
+  height: 100px;
+  padding: 20px 2%;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/* Garantir que as seções não se sobreponham */
 section {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 50vh; /* Ajuste para telas menores */
+  }
+
+  .btn-contact {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
