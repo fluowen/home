@@ -11,7 +11,6 @@ body {
     align-items: center;
     text-align: center;
     padding: 2%;
-    position: relative;
 }
 
 .bg-primary {
@@ -28,7 +27,8 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 50px; /* Tamanho proporcional do logo na barra de navegação */
+    max-width: 150px;
 }
 
 .navbar {
@@ -43,25 +43,26 @@ body {
 .contact-btn {
     position: absolute;
     top: 50%;
-    left: 10px;
-    z-index: 1000;
+    left: 20px;
+    z-index: 10;
     transform: translateY(-50%);
 }
 
 .service-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 .service-title {
     font-weight: 700;
-    font-size: 1.5rem;
 }
 
 .footer-logo {
-    width: 100px;
+    height: 50px; /* Tamanho proporcional do logo no rodapé */
+    max-width: 150px;
 }
 
 .footer-contact {
