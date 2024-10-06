@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo do Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #343a40;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item .nav-link {
+    padding: 0 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item .nav-link:hover {
+    color: #92E016;
+}
+
+/* Ajustar o carrossel para ocupar 100% da seção com margens de 5px (superior e inferior) e 10px (direita e esquerda) */
+#carousel-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: calc(100% - 20px); /* Margens laterais de 10px */
+    height: calc(100% - 10px); /* Margens superior e inferior de 5px */
+    margin: 5px 10px; /* Aplica as margens superiores, inferiores e laterais */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para as outras seções */
+.section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.section-content {
+    width: 98%;
+    height: 98%;
+}
