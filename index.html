@@ -3,70 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Fluowen</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Fluowen - Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Barra de Navegação -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="https://fluowen.github.io/home/img/fluowen.jpg" alt="Fluowen Logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://fluowen.github.io/home/img/fluowen.png" alt="Fluowen Logo" width="120">
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#sobre-nos">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rodape">Contato</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#sobre-nos">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
     </nav>
 
     <!-- Seção Sobre Nós -->
-    <section id="sobre-nos" class="section about-us">
-        <div class="carousel">
+    <section id="sobre-nos" class="section">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <img src="https://github.com/fluowen/home/blob/main/img/img01.jpg" alt="Imagem 1">
-                <img src="https://github.com/fluowen/home/blob/main/img/img02.jpg" alt="Imagem 2">
-                <img src="https://github.com/fluowen/home/blob/main/img/img03.jpg" alt="Imagem 3">
+                <div class="carousel-item active">
+                    <img src="https://github.com/fluowen/home/img/img01.jpg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://github.com/fluowen/home/img/img02.jpg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://github.com/fluowen/home/img/img03.jpg" class="d-block w-100" alt="Imagem 3">
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a href="https://wa.me/5511985863538" class="btn-contact" target="_blank">Entre em Contato</a>
+        <button class="btn btn-primary contact-btn" onclick="window.open('https://wa.me/5511915954848', '_blank')">Entre em Contato</button>
     </section>
 
     <!-- Seção Serviços -->
-    <section id="servicos" class="section services">
-        <div class="service">
-            <img src="https://via.placeholder.com/300" alt="Serviço 1">
-            <h3>Serviço 1</h3>
-            <p>Descrição do serviço 1.</p>
+    <section id="servicos" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://github.com/fluowen/home/img/img04.jpg" alt="Serviço 1" class="img-fluid">
+                    <h3 class="service-title">Serviço 1</h3>
+                    <p>Descrição do serviço 1.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://github.com/fluowen/home/img/img05.jpg" alt="Serviço 2" class="img-fluid">
+                    <h3 class="service-title">Serviço 2</h3>
+                    <p>Descrição do serviço 2.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://github.com/fluowen/home/img/img06.jpg" alt="Serviço 3" class="img-fluid">
+                    <h3 class="service-title">Serviço 3</h3>
+                    <p>Descrição do serviço 3.</p>
+                </div>
+            </div>
         </div>
-        <div class="service">
-            <img src="https://via.placeholder.com/300" alt="Serviço 2">
-            <h3>Serviço 2</h3>
-            <p>Descrição do serviço 2.</p>
-        </div>
-        <div class="service">
-            <img src="https://via.placeholder.com/300" alt="Serviço 3">
-            <h3>Serviço 3</h3>
-            <p>Descrição do serviço 3.</p>
-        </div>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato" class="section contact">
-        <h2>Entre em Contato</h2>
-        <form action="https://formspree.io/f/mqkwkzbr" method="POST">
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <input type="email" name="email" placeholder="Seu e-mail" required>
-            <textarea name="message" placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
     </section>
 
     <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2024 Fluowen. Todos os direitos reservados.</p>
+    <footer id="rodape" class="footer bg-dark text-white">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://fluowen.github.io/home/img/fluowen.png" alt="Fluowen Logo" width="120">
+                </div>
+                <div class="col-md-4">
+                    <p><a href="https://wa.me/5511915954848" class="text-white">+55(11)91595-4848</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="mailto:contact@fluowen.com" class="text-white">contact@fluowen.com</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
