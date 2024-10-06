@@ -6,19 +6,36 @@ body {
 
 .navbar {
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section {
     padding: 60px 0;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
-#about {
-    background-color: white;
+.carousel-inner img {
+    max-height: 600px;
+    object-fit: cover;
 }
 
-#services {
-    background-color: #f8f9fa;
+.contact-btn {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 10;
+    padding: 10px 20px;
+}
+
+#services .row {
+    margin-bottom: 40px;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
 }
 
 .footer-logo {
@@ -30,16 +47,27 @@ body {
     text-decoration: none;
 }
 
-.footer-contact:hover {
-    text-decoration: underline;
-}
-
 footer {
     background-color: #343a40;
+    padding: 20px 0;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
+    .contact-btn {
+        left: 5%;
+        top: 60%;
+    }
+
+    .carousel-inner img {
+        max-height: 400px;
+    }
+
     .section {
+        padding: 40px 20px;
+    }
+
+    footer {
         padding: 40px 0;
     }
 }
