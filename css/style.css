@@ -16,10 +16,11 @@ body {
   color: #fff !important;
 }
 
-/* Garantir que a seção Sobre Nós ocupe 100% da página e o conteúdo ocupe 96% */
+/* Seção Sobre Nós */
 #about {
-  height: 100vh;
+  min-height: 100vh; /* Garantir que ocupe no mínimo 100% da altura da tela */
   background-color: #F0F0F0;
+  padding: 0;
 }
 
 .about-container {
@@ -68,12 +69,14 @@ body {
 
 /* Serviços */
 #services {
-  height: 100vh;
+  min-height: 100vh; /* Usar min-height para evitar que a seção invada outras */
   background-color: #FFFFFF;
+  padding: 40px 0; /* Espaçamento interno para conteúdo */
+  margin: 0; /* Garantir que não há margens externas */
 }
 
 .container .row {
-  margin-bottom: 3rem;
+  margin-bottom: 3rem; /* Espaçamento entre as linhas de serviços */
 }
 
 .container .row img {
@@ -110,11 +113,16 @@ p {
   text-decoration: underline;
 }
 
-/* Garantir que as seções não se sobreponham */
+/* Evitar que seções se sobreponham */
 section {
-  overflow: hidden;
+  overflow: hidden; /* Impedir que conteúdo extra ultrapasse os limites */
   margin: 0;
   padding: 0;
+}
+
+/* Garantir que as seções não se sobreponham */
+#about, #services {
+  min-height: 100vh; /* Usar min-height em vez de height */
 }
 
 /* Responsividade para telas menores */
