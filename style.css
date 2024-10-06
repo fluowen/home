@@ -1,7 +1,8 @@
 body {
     font-family: 'Montserrat', 'Roboto', sans-serif;
     margin: 0;
-    padding-top: 70px; /* Compensar a barra de navegação fixa */
+    padding-top: 70px; /* Ajuste para compensar a barra de navegação fixa */
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -16,7 +17,7 @@ body {
 }
 
 .carousel-inner img {
-    max-height: 600px;
+    max-height: 500px;
     object-fit: cover;
 }
 
@@ -36,6 +37,7 @@ body {
 #services img {
     width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 .footer-logo {
@@ -45,6 +47,10 @@ body {
 .footer-contact {
     color: white;
     text-decoration: none;
+}
+
+.footer-contact:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -60,7 +66,7 @@ footer {
     }
 
     .carousel-inner img {
-        max-height: 400px;
+        max-height: 300px;
     }
 
     .section {
