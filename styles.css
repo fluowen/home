@@ -11,16 +11,26 @@ section {
     padding: 0;
 }
 
+/* Barra de Navegação */
+.navbar-nav .nav-link {
+    font-weight: 700; /* Negrito nos itens da barra de navegação */
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
 /* Seção do Carrossel */
 .carousel-section {
-    height: 100vh; /* O carrossel ocupa 100% da altura da viewport */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f8f9fa;
     padding: 0;
-    margin-bottom: 50px; /* Espaço após o carrossel */
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .carousel {
@@ -32,37 +42,37 @@ section {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que as imagens preencham o carrossel corretamente */
+    object-fit: cover;
 }
 
 /* Seção de Serviços */
 .services-section {
-    padding: 50px 0;
+    padding: 0;
     background-color: #fff;
-    clear: both; /* Força esta seção a começar após o carrossel */
-    margin-bottom: 50px;
+    width: 100vw; /* A seção ocupa 100% da largura da viewport */
+    clear: both;
+}
+
+.services-section .row {
+    width: 100%; /* As sub-seções ocupam 100% da largura */
+    margin: 0;
+}
+
+.services-section .img-fluid {
+    width: 100%;
+    height: 100vh; /* As imagens ocupam 100% da altura da tela */
+    object-fit: cover; /* Garante que as imagens preencham corretamente */
 }
 
 .services-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
+    padding: 20px;
 }
 
 .services-section p {
     font-size: 1.2rem;
-}
-
-.sub-section {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as imagens e textos se ajustem para telas menores */
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.sub-section img {
-    width: 100%;
-    max-width: 48%; /* Ocupa metade da largura, ajustando em telas menores */
-    object-fit: cover;
+    padding: 20px;
 }
 
 /* Footer */
@@ -71,7 +81,6 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: 50px; /* Espaço antes do footer */
 }
 
 footer a {
