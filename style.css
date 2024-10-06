@@ -14,13 +14,8 @@ body {
     box-sizing: border-box;
 }
 
-.bg-primary {
-    background-color: #f8f9fa;
-}
-
-.bg-secondary {
-    background-color: #343a40;
-    color: white;
+.bg-white {
+    background-color: white;
 }
 
 .bg-gray {
@@ -51,14 +46,15 @@ body {
     left: 20px;
     z-index: 10;
     transform: translateY(-50%);
+    background-color: #0056b3; /* Cor relacionada à identidade visual */
+    border: none;
 }
 
 .service-item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
 }
 
 .service-item img {
@@ -68,6 +64,7 @@ body {
 
 .service-title {
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .footer-logo {
