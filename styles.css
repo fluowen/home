@@ -1,0 +1,41 @@
+/* Estilo da Seção */
+.carousel-section {
+    background-image: url('images/background.jpg'); /* Imagem de fundo da seção */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza o carrossel horizontalmente */
+    align-items: center;     /* Centraliza o carrossel verticalmente */
+}
+
+/* Estilo do Carrossel */
+.carousel {
+    width: 72%; /* Carrossel ocupa 72% da largura da seção */
+}
+
+.carousel-item img {
+    width: 100%; /* Imagens dentro do carrossel ocupam 100% da largura do carrossel */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Barra de navegação */
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+}
+
+footer a {
+    color: #5eb71b; /* Verde claro para links no footer */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
