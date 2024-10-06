@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Reseta a margem de todas as seções */
 section {
     margin: 0;
     padding: 0;
@@ -20,8 +19,8 @@ section {
     align-items: center;
     background-color: #f8f9fa;
     padding: 0;
-    margin-bottom: 100px; /* Aumenta o espaço após o carrossel */
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse a seção */
+    margin-bottom: 50px; /* Espaço após o carrossel */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
 }
 
 .carousel {
@@ -38,10 +37,10 @@ section {
 
 /* Seção de Serviços */
 .services-section {
-    padding: 50px 0; /* Espaço interno da seção */
+    padding: 50px 0;
     background-color: #fff;
-    margin: 0 auto; /* Centraliza a seção e evita invasão */
     clear: both; /* Força esta seção a começar após o carrossel */
+    margin-bottom: 50px;
 }
 
 .services-section h2 {
@@ -53,23 +52,17 @@ section {
     font-size: 1.2rem;
 }
 
-/* Sub-seções de Serviços */
 .sub-section {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; /* Permite que as imagens e textos se ajustem para telas menores */
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 50px; /* Espaço entre as sub-seções */
+    margin-bottom: 50px;
 }
 
 .sub-section img {
-    width: 48%; /* Imagem ocupa metade da sub-seção */
+    width: 100%;
+    max-width: 48%; /* Ocupa metade da largura, ajustando em telas menores */
     object-fit: cover;
-}
-
-.sub-section .text-content {
-    width: 48%; /* Texto ocupa metade da sub-seção */
-    padding: 20px;
 }
 
 /* Footer */
