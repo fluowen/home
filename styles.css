@@ -11,6 +11,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 2%;
+    position: relative;
 }
 
 .bg-primary {
@@ -48,14 +49,15 @@ body {
 }
 
 .service-item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 .service-title {
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .footer-logo {
