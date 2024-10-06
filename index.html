@@ -12,7 +12,7 @@
 <body>
 
     <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Cor alterada para bg-dark -->
         <a class="navbar-brand" href="#">
             <img src="img/fluowen.jpg" alt="Logo" style="width: 50px; height: 50px;">
         </a>
@@ -57,6 +57,8 @@
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
+        <!-- Botão flutuante de contato -->
+        <a href="#contact" class="btn btn-primary btn-contato">Contato</a> <!-- Botão flutuante para formulário -->
     </section>
 
     <!-- Seção de Serviços -->
@@ -97,12 +99,17 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p><a href="mailto:contact@fluowen.com" class="text-white">contact@fluowen.com</a></p>
-        <p>
+        <div>
+            <img src="img/fluowen.jpg" alt="Logo" style="width: 50px; height: 50px;">
+        </div>
+        <div>
             <a href="https://wa.me/5511915954848" target="_blank">
                 <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 24px; height: 24px;">
             </a>
-        </p>
+            <a href="mailto:contact@fluowen.com" class="ml-3">
+                <img src="img/email-icon.png" alt="Email" style="width: 24px; height: 24px;">
+            </a>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
