@@ -1,144 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="[fluowen]"
-  agent-id="154ddc90-1770-45c7-8de6-9fdac29cad22"
-  language-code="pt-br"
-></df-messenger>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fluowen Services</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f0f4f8;
-            color: #333;
-        }
-
-        header {
-            background-color: #f0f4f8;
-            text-align: center;
-            padding: 30px;
-        }
-
-        header img {
-            width: 200px;
-            height: auto;
-        }
-
-        section {
-            position: relative;
-            padding: 100px 20px;
-            text-align: center;
-            color: white;
-            font-size: 1.5em;
-        }
-
-        section .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        section h2 {
-            font-size: 2.5em;
-            color: #fff;
-            z-index: 2;
-            position: relative;
-        }
-
-        section p {
-            z-index: 2;
-            position: relative;
-            margin-top: 20px;
-        }
-
-        section.bg1 {
-            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        section.bg2 {
-            background-image: url('https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        section.bg3 {
-            background-image: url('https://images.unsplash.com/photo-1553390774-b4822481c894?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-            background-size: cover;
-            background-position: center;
-        }
-
-        section.bg4 {
-            background-image: url('https://images.pexels.com/photos/4312861/pexels-photo-4312861.jpeg');            
-            background-size: cover;
-            background-position: center;
-        }
-
-        footer {
-            background-color: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <title>Carrossel em Seção</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Cabeçalho com o logo -->
-    <header>
-        <img src="fluowen.png" alt="Logo Fluowen">
-    </header>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Fluowen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Seção 1: Quem Somos -->
-    <section class="bg1">
-        <div class="overlay"></div>
-        <h2>Quem Somos</h2>
-        <p>A Fluowen dedicada-se a proporcionar inovação e soluções seguras para pequenas e médias empresas, ajudando a escalar seus negócios através da adoção de tecnologias em benefício dos negócios.</p>
+    <!-- Seção com Background e Carrossel -->
+    <section class="carousel-section">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="5000"> <!-- 5 segundos de intervalo -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slide1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
     </section>
 
-    <!-- Seção 2: Nossos Serviços -->
-    <section class="bg2">
-        <div class="overlay"></div>
-        <h2>Nossos Serviços</h2>
-        <p>Oferecemos serviços para digitalizar a sua empresa.</p>
-    </section>
-
-    <!-- Seção 3: Nossa Equipe -->
-    <section class="bg3">
-        <div class="overlay"></div>
-        <h2>Nossa Equipe</h2>
-        <p>Contamos com uma equipe experiente.</p>
-    </section>
-
-    <!-- Seção 4: Estratégia e Planejamento -->
-    <section class="bg4">
-        <div class="overlay"></div>
-        <h2>Estratégia e Planejamento</h2>
-        <p>Trabalhamos com uma abordagem estratégica, analisando o mercado e aplicando práticas inovadoras para garantir o crescimento sustentável da sua empresa.</p>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Fluowen. Todos os direitos reservados.</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Fluowen Consultoria. Todos os direitos reservados.</p>
+        <p>Email: <a href="mailto:contact@fluowen.com" class="text-white">contact@fluowen.com</a></p>
+        <p>
+            <a href="https://wa.me/5511915954848" target="_blank">
+                <img src="images/whatsapp-icon.png" alt="WhatsApp" style="width: 24px; height: 24px;"> WhatsApp: +55(11) 91595-4848
+            </a>
+        </p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
