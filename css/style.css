@@ -18,9 +18,9 @@ body {
 
 /* Seção Sobre Nós */
 #about {
-  min-height: 100vh; /* Garantir que ocupe no mínimo 100% da altura da tela */
-  background-color: #F0F0F0;
-  padding: 0;
+  min-height: 100vh; /* Garante que a seção ocupe toda a tela */
+  position: relative;
+  z-index: 1; /* Coloca a seção sobre o carrossel */
 }
 
 .about-container {
@@ -70,10 +70,9 @@ body {
 
 /* Serviços */
 #services {
-  min-height: 100vh; /* Usar min-height para evitar que a seção invada outras */
-  background-color: #FFFFFF;
-  padding: 40px 0; /* Espaçamento interno para conteúdo */
-  margin: 0; /* Garantir que não há margens externas */
+  min-height: 100vh; /* Garante que não invada */
+  padding-top: 20px; /* Garante um espaçamento superior */
+  z-index: 2;
 }
 
 .container .row {
