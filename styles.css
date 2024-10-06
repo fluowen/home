@@ -1,153 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Montserrat', 'Roboto', sans-serif;
-    line-height: 1.6;
 }
 
-/* Barra de Navegação */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4%;
-    background-color: #003366;
-}
-
-.navbar .logo img {
-    width: 150px;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
-}
-
-/* Seções */
 .section {
-    padding: 50px 4%;
-    width: 96%;
-    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
 }
 
-.about-us {
-    background-color: #004080;
-    position: relative;
-}
-
-.carousel {
-    height: 100%;
-}
-
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-}
-
-.btn-contact {
+.contact-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 30px;
-    background-color: #fff;
-    color: #004080;
-    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#servicos .service-title {
     font-weight: bold;
-    border-radius: 5px;
+    margin-top: 20px;
 }
 
-.services {
-    background-color: #001f33;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.service {
-    text-align: center;
-}
-
-.service img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-
-.contact {
-    background-color: #00264d;
-    text-align: center;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    max-width: 500px;
-}
-
-.contact button {
-    padding: 10px;
-    background-color: #004080;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #003366;
-}
-
-/* Rodapé */
 .footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
+    padding: 20px 0;
 }
 
-.footer p {
-    margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-
-    .services {
-        flex-direction: column;
-    }
-
-    .service {
-        margin-bottom: 30px;
-    }
+.carousel-inner img {
+    width: 96%;
+    height: 96vh;
+    object-fit: cover;
 }
