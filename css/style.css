@@ -22,3 +22,36 @@ h2 {
 footer {
   padding: 0 2%;
 }
+/* Garantir que a seção ocupe 100% da página e o conteúdo ocupe 96% */
+#about {
+  height: 100vh;
+}
+
+.about-container {
+  width: 96%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* Garantir que as imagens do carrossel tenham o mesmo tamanho */
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-img {
+  height: 100%;
+  object-fit: cover; /* Redimensiona e corta as imagens conforme necessário */
+}
+
+/* Garantir que o botão esteja sempre no mesmo lugar */
+.fixed-button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* Evitar invasão de conteúdo */
+section {
+  overflow: hidden;
+}
