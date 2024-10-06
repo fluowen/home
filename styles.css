@@ -6,34 +6,42 @@ body {
     box-sizing: border-box;
 }
 
+/* Reseta a margem de todas as seções */
+section {
+    margin: 0;
+    padding: 0;
+}
+
 /* Seção do Carrossel */
 .carousel-section {
-    height: 100vh; /* Ocupa 100% da altura da tela */
+    height: 100vh; /* O carrossel ocupa 100% da altura da viewport */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f8f9fa;
     padding: 0;
-    margin-bottom: 50px; /* Espaço entre o carrossel e a próxima seção */
+    margin-bottom: 100px; /* Aumenta o espaço após o carrossel */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse a seção */
 }
 
 .carousel {
     width: 96%;
     height: 96%; /* O carrossel ocupa 96% da altura da seção */
-    margin: auto; /* Centraliza o carrossel */
+    margin: auto;
 }
 
 .carousel-item img {
     width: 100%;
-    height: 100%; /* Garante que as imagens preencham o carrossel */
-    object-fit: cover; /* Mantém a proporção das imagens */
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens preencham o carrossel corretamente */
 }
 
 /* Seção de Serviços */
 .services-section {
-    padding: 50px 0; /* Adiciona espaçamento interno (padding) */
+    padding: 50px 0; /* Espaço interno da seção */
     background-color: #fff;
-    margin-bottom: 50px; /* Espaço entre as seções */
+    margin: 0 auto; /* Centraliza a seção e evita invasão */
+    clear: both; /* Força esta seção a começar após o carrossel */
 }
 
 .services-section h2 {
@@ -45,11 +53,30 @@ body {
     font-size: 1.2rem;
 }
 
+/* Sub-seções de Serviços */
+.sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px; /* Espaço entre as sub-seções */
+}
+
+.sub-section img {
+    width: 48%; /* Imagem ocupa metade da sub-seção */
+    object-fit: cover;
+}
+
+.sub-section .text-content {
+    width: 48%; /* Texto ocupa metade da sub-seção */
+    padding: 20px;
+}
+
 /* Footer */
 footer {
     background-color: #343a40;
     color: #fff;
-    padding: 20px 0; /* Espaçamento interno no footer */
+    padding: 20px;
     text-align: center;
     margin-top: 50px; /* Espaço antes do footer */
 }
