@@ -20,14 +20,14 @@ html, body {
 
 .carousel-container {
   position: relative;
-  width: 100%;
-  height: 80%; /* Set consistent height for all images */
+  width: 100vh;
+  height: 80vh; /* Set consistent height for all images */
   overflow: hidden;
 }
 
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
   object-fit: cover; /* Ensures images are resized and cropped as necessary */
 }
 
@@ -75,9 +75,9 @@ html, body {
 
 footer {
   background-color: #A9A9A9;
-  padding-top: 2vh;
-  padding-left: 2vh;
-  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
   display: flex;
   justify-content: space-between;
 }
