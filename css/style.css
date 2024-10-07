@@ -16,15 +16,16 @@ html, body {
   flex-direction: column;
 }
 
-.carousel-container {
-  width: 100%;
-  position: relative;
-}
-
 .carousel-inner img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 400px; /* Set the maximum height based on the smallest image */
+  object-fit: cover; /* Ensures that larger images are cropped to fit */
+}
+
+.carousel-container {
+  max-height: 400px; /* Ensure the container does not exceed the smallest image height */
+  overflow: hidden; /* Ensures content doesn't overflow */
 }
 
 .btn-contact {
