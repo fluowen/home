@@ -9,8 +9,9 @@ html, body {
 .section {
   width: 100%;
   min-height: 100vh;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,8 +50,9 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
 
 .service-item {
@@ -77,8 +79,9 @@ html, body {
 
 footer {
   background-color: #A9A9A9;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-top: 2vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
   display: flex;
   justify-content: space-between;
 }
