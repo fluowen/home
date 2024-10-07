@@ -18,9 +18,36 @@ section {
 /* Services Section */
 #services {
   padding: 20px;
-  width: 96%; /* Content occupies 96% of the section */
+  width: 96%;
   margin: 0 auto;
 }
+
+#services .flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+}
+
+#services img {
+  max-width: 50%; /* Ensures the image takes 50% of the width */
+  margin-right: 20px; /* Adds some space between the image and text */
+  height: auto;
+}
+
+#services .text-content {
+  width: 50%; /* Text content takes the other 50% */
+}
+
+/* General Spacing and Padding */
+.mb-8 {
+  margin-bottom: 1.5rem;
+}
+
+.py-8, .lg-py-12 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 
 /* Image Scaling */
 img {
