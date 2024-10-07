@@ -18,7 +18,7 @@ section {
 /* Services Section */
 #services {
   padding: 20px;
-  width: 96%;
+  width: 96%; /* Content occupies 96% of the section */
   margin: 0 auto;
 }
 
@@ -37,17 +37,6 @@ section {
 #services .text-content {
   width: 50%; /* Text content takes the other 50% */
 }
-
-/* General Spacing and Padding */
-.mb-8 {
-  margin-bottom: 1.5rem;
-}
-
-.py-8, .lg-py-12 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 
 /* Image Scaling */
 img {
@@ -122,5 +111,15 @@ img {
 
   p {
     font-size: 0.9rem;
+  }
+
+  #services img {
+    max-width: 100%; /* Makes images full-width on mobile */
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  #services .text-content {
+    width: 100%; /* Text takes full width on mobile */
   }
 }
