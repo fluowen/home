@@ -30,25 +30,25 @@ body, html {
 
 /* Services Section */
 #services {
-  min-height: 100vh; /* Makes the services section take up the full screen */
-  width: 96%;
+  width: 100%; /* Ensures the section takes 100% horizontal space */
   margin: 0 auto;
   padding: 20px;
+  box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 #services .flex {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Aligns images and text properly */
+  justify-content: flex-start;
 }
 
 #services img {
-  max-width: 50%; /* Ensures images take 50% of the container */
+  max-width: 50%; /* Images take up 50% of the section */
   margin-right: 20px;
 }
 
 #services .text-content {
-  width: 50%; /* Text takes the other 50% */
+  width: 50%; /* Text takes up the other 50% */
 }
 
 /* Footer */
