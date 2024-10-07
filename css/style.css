@@ -1,3 +1,4 @@
+/* General Styling */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ html, body {
   overflow-x: hidden;
 }
 
+/* Section Styling */
 .section {
   width: 100%;
   min-height: 100vh;
@@ -13,8 +15,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+/* Carousel Styling */
 .carousel-container {
   position: relative;
   width: 100%;
@@ -37,11 +41,62 @@ html, body {
   color: white;
   padding: 15px 30px;
   border-radius: 5px;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
   z-index: 10;
 }
 
+/* Services Section */
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vh 0;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.service-item img {
+  width: 30%;
+  height: auto;
+}
+
+.service-description {
+  width: 65%;
+  text-align: left;
+}
+
+.service-description .btn {
+  margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #A9A9A9;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  height: 5vh;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Adding New Sections from Second CSS */
+
+/* Our Services Section */
 #our-services {
   display: flex;
   justify-content: space-between;
@@ -67,25 +122,7 @@ html, body {
   line-height: 1.6;
 }
 
-#services .service-item {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-#services .service-item img {
-  width: 30%;
-}
-
-#services .service-description {
-  width: 65%;
-}
-
-#services .service-description .btn {
-  margin-top: 10px;
-}
-
+/* About Section */
 #about-section {
   display: flex;
   justify-content: space-between;
@@ -109,6 +146,7 @@ html, body {
   font-size: 1.2rem;
 }
 
+/* Clients Section */
 #clients {
   display: flex;
   justify-content: space-between;
@@ -122,20 +160,4 @@ html, body {
 
 .clients-carousel {
   width: 65%;
-}
-
-footer {
-  background-color: #A9A9A9;
-  padding: 2vh;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer img {
-  height: 5vh;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
 }
