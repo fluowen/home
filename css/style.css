@@ -39,7 +39,7 @@ body, html {
   display: flex;
   flex-direction: row; /* Aligns image and text horizontally */
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* Keeps content aligned to the left */
   margin-bottom: 40px;
 }
 
@@ -51,7 +51,7 @@ body, html {
 
 .service-description {
   width: 50%; /* Text content takes 50% */
-  text-align: left;
+  text-align: right; /* Aligns text to the right */
   margin-left: 20px; /* Adds space between the image and text */
 }
 
