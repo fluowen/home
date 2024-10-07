@@ -9,7 +9,7 @@ html, body {
 .section {
   width: 100%;
   min-height: 100vh;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
 }
 
 .service-item {
