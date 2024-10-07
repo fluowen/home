@@ -3,23 +3,24 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Evitar scroll horizontal */
+  overflow-x: hidden;
+  background-color: #FFFFFF;
 }
 
 /* Barra de Navegação */
 .navbar {
-  background-color: #A9A9A9; /* Cor cinza do logo aplicada à barra de navegação */
+  background-color: #A9A9A9; /* Cor cinza do logo */
 }
 
 .nav-link {
   font-size: 1.2rem;
-  color: #A9A9A9;
+  color: #fff !important;
 }
 
 /* Seção Sobre Nós */
 #about {
   min-height: 100vh;
-  background-color: #A9A9A9; /* Cor cinza do logo aplicada ao fundo da seção */
+  background-color: #FFFFFF; /* Fundo branco */
   padding: 0;
   position: relative;
   z-index: 1;
@@ -37,7 +38,6 @@ body {
   position: relative;
 }
 
-/* Garantir que as imagens do carrossel tenham o mesmo tamanho */
 .carousel-inner {
   height: 100%;
 }
@@ -48,13 +48,13 @@ body {
   object-fit: cover;
 }
 
-/* Reposicionar e estilizar o botão Entre em Contato */
+/* Botão Entre em Contato */
 .btn-contact {
   position: absolute;
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #808080; /* Botão cinza mais escuro */
+  background-color: #808080; /* Cor cinza */
   color: white;
   padding: 15px 30px;
   border-radius: 5px;
@@ -65,17 +65,16 @@ body {
 }
 
 .btn-contact:hover {
-  background-color: #696969; /* Hover em cinza mais escuro */
+  background-color: #696969; /* Cinza mais escuro no hover */
   color: white;
   text-decoration: none;
 }
 
-/* Serviços */
+/* Seção Serviços */
 #services {
   min-height: 100vh;
-  background-color: #A9A9A9; /* Cor cinza do logo aplicada ao fundo da seção */
+  background-color: #FFFFFF; /* Fundo branco */
   padding-top: 20px;
-  z-index: 2;
 }
 
 .container .row {
@@ -101,14 +100,14 @@ p {
 
 /* Rodapé */
 #footer {
-  background-color: #A9A9A9; /* Cor cinza do logo aplicada ao rodapé */
-  color: #A9A9A9;
+  background-color: #A9A9A9; /* Cor cinza do logo */
+  color: white;
   height: 100px;
   padding: 20px 2%;
 }
 
 #footer a {
-  color: #A9A9A9;
+  color: white;
   text-decoration: none;
 }
 
@@ -116,22 +115,21 @@ p {
   text-decoration: underline;
 }
 
-/* Evitar que seções se sobreponham */
+/* Evitar sobreposição entre seções */
 section {
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-/* Garantir que as seções não se sobreponham */
 #about, #services {
   min-height: 100vh;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
   .carousel-img {
-    height: 50vh;
+    height: 50vh; /* Ajuste para telas menores */
   }
 
   .btn-contact {
