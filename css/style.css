@@ -3,61 +3,70 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden;
 }
 
 .section {
   width: 100%;
-  min-height: 100vh; /* Each section occupies a full viewport height */
+  min-height: 100vh;
   padding: 20px;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensures content stays within section */
+  flex-direction: column;
 }
 
 .carousel-container {
   width: 100%;
-  height: 100%;
+  position: relative;
 }
 
 .carousel-inner img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures uniform image size */
+  object-fit: cover;
+}
+
+.btn-contact {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  background-color: #808080;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 10; /* Ensures the button stays on top of the carousel */
 }
 
 #services {
-  background-color: #f4f4f4;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; /* Spread content evenly */
-  height: 100vh; /* Ensures section height fits within one page */
-  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .service-item {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .service-item img {
-  width: 60%; /* Reduce image size */
+  width: 30%; /* Image on the left */
   height: auto;
 }
 
 .service-description {
-  text-align: center;
-  margin-top: 10px;
+  width: 65%; /* Text to the right of the image */
+  text-align: left;
 }
 
 .service-description .btn {
-  margin-top: 10px;
+  margin-top: 10px; /* Button below the text */
 }
 
 footer {
@@ -65,10 +74,13 @@ footer {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box; /* Ensures content stays within footer */
 }
 
 footer a {
   color: white;
   text-decoration: none;
+}
+
+footer img {
+  height: 40px;
 }
