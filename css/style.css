@@ -4,6 +4,15 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
+  max-width: 100%; /* Prevents overflow */
+  overflow-x: hidden;
+}
+
+/* Section Width */
+section {
+  max-width: 1200px; /* Limits the section width */
+  margin: 0 auto; /* Centers the content */
+  padding: 20px;
 }
 
 /* Services Section */
@@ -13,6 +22,13 @@ body {
   margin: 0 auto;
 }
 
+/* Image Scaling */
+img {
+  max-width: 100%; /* Ensures images don't overflow */
+  height: auto;
+}
+
+/* Spacing Adjustments */
 .h-250, .lg-min-h-460 {
   height: auto; /* Adjust image height to fit within one page */
 }
@@ -62,7 +78,7 @@ body {
   width: auto;
 }
 
-/* Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
   .carousel-img {
     height: 50vh;
