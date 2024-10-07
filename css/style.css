@@ -9,18 +9,43 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Shared Background for Services and About Sections */
-#services, #about {
-  background-color: #f4f4f4; /* Same background color */
+/* Consistent Background for Sections */
+#services, #about, .carousel-container {
+  background-color: #f4f4f4; /* Same background color for consistency */
   padding: 40px 0;
-  width: 96%; /* Occupies 96% of the horizontal space */
-  margin: 0 auto; /* Center the sections */
+  width: 96%; /* Ensure sections occupy 96% of the horizontal space */
+  margin: 0 auto;
+}
+
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+}
+
+/* Floating Button Over Carousel */
+.btn-contact {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensures button stays above the carousel */
+  background-color: #808080;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-contact:hover {
+  background-color: #696969;
 }
 
 /* Services Section */
 #services .service-item {
   display: flex;
-  flex-direction: row; /* Aligns content horizontally */
+  flex-direction: row; /* Align content horizontally */
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -34,14 +59,9 @@ body, html {
 }
 
 #services .service-description {
-  width: 50%; /* Text takes 50% of the container */
+  width: 50%;
   text-align: right;
   margin-left: 20px;
-}
-
-/* Sobre Nós Section */
-#about {
-  text-align: center;
 }
 
 /* Footer Section */
@@ -70,7 +90,7 @@ body, html {
 /* Responsive Design */
 @media (max-width: 768px) {
   #services .service-item {
-    flex-direction: column; /* Stack the content vertically on mobile */
+    flex-direction: column; /* Stack content vertically on mobile */
     text-align: center;
   }
 
@@ -83,5 +103,11 @@ body, html {
     width: 100%;
     margin-left: 0;
     text-align: left;
+  }
+
+  .btn-contact {
+    left: 10%; /* Adjusts button position for smaller screens */
+    font-size: 1rem;
+    padding: 10px 20px;
   }
 }
