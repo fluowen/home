@@ -3,54 +3,36 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+  box-sizing: border-box;
 }
 
 .section {
   width: 100%;
-  height: 100vh; /* Ensure full section height */
+  height: 100vh; /* Full viewport height */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden; /* Ensures content doesn't spill out */
+  padding: 20px; /* Adds padding but keeps content inside */
+  box-sizing: border-box;
 }
 
-.carousel-container {
+.carousel-container, .service-item {
   width: 100%;
   height: 100%;
+  box-sizing: border-box; /* Includes padding within the total size */
 }
 
 .carousel-inner img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure all images fit uniformly */
-}
-
-.btn-contact {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  background-color: #808080;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-#services {
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-.service-item {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center;
-  margin-bottom: 40px;
+  object-fit: cover; /* Ensures images remain within bounds */
 }
 
 .service-item img {
-  width: 80%; /* Ensure uniform image size */
+  width: 80%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -59,16 +41,13 @@ html, body {
   text-align: center;
 }
 
-.service-description .btn {
-  margin-top: 10px;
-}
-
 footer {
   background-color: #A9A9A9;
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  box-sizing: border-box; /* Keeps footer content inside the container */
 }
 
 footer a {
