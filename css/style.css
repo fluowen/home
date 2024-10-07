@@ -3,193 +3,49 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   background-color: #FFFFFF;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #A9A9A9; /* Fluowen logo color */
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  color: white !important;
-}
-
-/* About Section */
-#about {
-  min-height: 100vh;
-  background-color: #FFFFFF;
-  padding: 0;
-  position: relative;
-}
-
-.about-container {
-  width: 96%;
-  height: 100%;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-/* Contact Button */
-.btn-contact {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #808080;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-contact:hover {
-  background-color: #696969;
-  text-decoration: none;
 }
 
 /* Services Section */
 #services {
-  padding-top: 20px;
+  padding: 20px;
+  width: 96%; /* Content occupies 96% of the section */
+  margin: 0 auto;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.flex-lg-row {
-  flex-direction: row;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-end {
-  justify-content: end;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.h-250 {
-  height: 250px;
-}
-
-.lg-min-h-460 {
-  min-height: 460px;
-}
-
-.object-cover {
-  object-fit: cover;
-}
-
-.px-15 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.lg-py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-/* Text Styling */
-.text-3xl {
-  font-size: 1.875rem;
-}
-
-.md-text-4xl {
-  font-size: 2.25rem;
-}
-
-.lg-text-5xl {
-  font-size: 3rem;
+.h-250, .lg-min-h-460 {
+  height: auto; /* Adjust image height to fit within one page */
 }
 
 .mb-8 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Reduces spacing between elements */
 }
 
-.text-uppercase {
-  text-transform: uppercase;
+.lg-text-5xl {
+  font-size: 2.5rem; /* Reduces header size to fit */
 }
 
-.text-center {
-  text-align: center;
+.py-8, .lg-py-12 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-base {
-  font-size: 1rem;
-}
-
-/* Call-to-action Button */
-.transition-all {
-  transition: all 0.3s ease;
-}
-
-.transition-colors {
-  transition: background-color 0.3s ease;
-}
-
-.group:hover .hover-ml-2 {
-  margin-left: 0.5rem;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
+/* Button Styling */
+.group {
+  margin-bottom: 1.5rem;
 }
 
 .rounded-full {
-  border-radius: 50%;
-}
-
-.bg-greenLight {
-  background-color: #B0C4DE;
-}
-
-.group-hover-bg-green:hover {
-  background-color: #004080; /* Fluowen logo dark color */
+  border-radius: 9999px;
 }
 
 /* Footer */
 #footer {
   background-color: #A9A9A9;
   color: white;
-  height: 100px;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #footer a {
@@ -217,8 +73,8 @@ body {
     padding: 10px 20px;
   }
 
-  h3 {
-    font-size: 1.5rem;
+  .lg-text-5xl {
+    font-size: 2rem;
   }
 
   p {
