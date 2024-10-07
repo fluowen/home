@@ -1,3 +1,4 @@
+/* Estilo Global */
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -6,131 +7,132 @@ body {
   background-color: #FFFFFF;
 }
 
-/* Barra de Navegação */
-.navbar {
-  background-color: #A9A9A9; /* Cor cinza do logo */
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  color: #fff !important;
-}
-
-/* Seção Sobre Nós */
-#about {
-  min-height: 100vh;
-  background-color: #FFFFFF;
-  padding: 0;
-  position: relative;
-  z-index: 1;
-}
-
-.about-container {
-  width: 96%;
-  height: 100%;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  position: relative;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-/* Botão Entre em Contato */
-.btn-contact {
-  position: absolute;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #808080; /* Cor cinza */
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-align: center;
-  z-index: 2;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-contact:hover {
-  background-color: #696969; /* Cinza mais escuro no hover */
-  color: white;
-  text-decoration: none;
-}
-
 /* Seção Serviços */
 #services {
-  min-height: 100vh;
   background-color: #FFFFFF;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
-.service-div {
-  width: 96%; /* Garante que as divs ocupem 96% da largura da seção */
-}
-
-.container .row {
-  margin-bottom: 3rem;
-}
-
-.container .row img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* Rodapé */
-#footer {
-  background-color: #A9A9A9; /* Cor cinza */
-  color: white;
-  height: 100px;
-  padding: 20px 2%;
+.flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.lg\\:flex-row {
+  flex-direction: row;
+}
+
+.items-center {
   align-items: center;
 }
 
-#footer img {
-  height: 50px; /* Ajusta o tamanho proporcional do logo */
-  width: auto;
+.w-full {
+  width: 100%;
 }
 
-#footer a {
-  color: white;
-  text-decoration: none;
+.lg\\:w-\\[50\\%\\] {
+  width: 50%;
 }
 
-#footer a:hover {
-  text-decoration: underline;
+.h-full {
+  height: 100%;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .carousel-img {
-    height: 50vh;
-  }
+.object-cover {
+  object-fit: cover;
+}
 
-  .btn-contact {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
+.px-\\[15px\\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  p {
-    font-size: 0.9rem;
-  }
+.xl\\:px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.lg\\:py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.md\\:text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.lg\\:text-5xl {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.group:hover .hover\\:ml-2 {
+  margin-left: 0.5rem;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-colors {
+  transition: background-color 0.3s ease;
+}
+
+.bg-greenLight {
+  background-color: #b3e6b5;
+}
+
+.group-hover\\:bg-green:hover {
+  background-color: #28a745;
 }
