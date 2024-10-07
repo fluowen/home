@@ -9,17 +9,17 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Consistent Background for Sections */
-#services, #about, .carousel-container {
-  background-color: #f4f4f4; /* Same background color for consistency */
+/* Ensure all sections take 100% width */
+section {
+  width: 100%;
   padding: 40px 0;
-  width: 96%; /* Ensure sections occupy 96% of the horizontal space */
   margin: 0 auto;
 }
 
 /* Carousel Container */
 .carousel-container {
   position: relative;
+  width: 100%; /* Ensures full width for the carousel section */
 }
 
 /* Floating Button Over Carousel */
@@ -43,9 +43,13 @@ body, html {
 }
 
 /* Services Section */
+#services {
+  background-color: #f4f4f4;
+}
+
 #services .service-item {
   display: flex;
-  flex-direction: row; /* Align content horizontally */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -71,6 +75,7 @@ body, html {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  width: 100%; /* Full width for the footer */
 }
 
 #footer a {
