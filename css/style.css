@@ -19,7 +19,7 @@ html, body {
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 400px; /* Set consistent height for all images */
+  height: 80%; /* Set consistent height for all images */
   overflow: hidden;
 }
 
