@@ -1,36 +1,37 @@
 /* Global Styles */
-body {
-  font-family: 'Montserrat', sans-serif;
+body, html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensures padding and margins don't overflow */
   background-color: #FFFFFF;
-  max-width: 100%; /* Prevents overflow */
+  max-width: 100%; /* Prevents horizontal scrolling */
   overflow-x: hidden;
 }
 
 /* Section Width */
 section {
-  max-width: 1200px; /* Limits the section width */
-  margin: 0 auto; /* Centers the content */
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the section */
   padding: 20px;
 }
 
 /* Services Section */
 #services {
+  width: 96%; /* Occupies 96% of the horizontal space */
+  margin: 0 auto; /* Centers the content */
   padding: 20px;
-  width: 96%; /* Content occupies 96% of the section */
-  margin: 0 auto;
+  box-sizing: border-box; /* Includes padding in the width */
 }
 
 #services .flex {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Align content to the left */
+  justify-content: flex-start;
 }
 
 #services img {
   max-width: 50%; /* Ensures the image takes 50% of the width */
-  margin-right: 20px; /* Adds some space between the image and text */
+  margin-right: 20px; /* Adds space between the image and text */
   height: auto;
 }
 
@@ -40,21 +41,17 @@ section {
 
 /* Image Scaling */
 img {
-  max-width: 100%; /* Ensures images don't overflow */
+  max-width: 100%;
   height: auto;
 }
 
 /* Spacing Adjustments */
-.h-250, .lg-min-h-460 {
-  height: auto; /* Adjust image height to fit within one page */
-}
-
 .mb-8 {
-  margin-bottom: 1.5rem; /* Reduces spacing between elements */
+  margin-bottom: 1.5rem;
 }
 
 .lg-text-5xl {
-  font-size: 2.5rem; /* Reduces header size to fit */
+  font-size: 2.5rem;
 }
 
 .py-8, .lg-py-12 {
