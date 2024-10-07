@@ -1,78 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fluowen</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Fluowen oferece serviços de criação de sites, chatbots e marketing digital.">
+  <meta name="keywords" content="Fluowen, criação de sites, landing pages, chatbot, marketing digital">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Fluowen - Serviços e Inovação">
+  <meta property="og:description" content="Conheça os serviços da Fluowen.">
+  <meta property="og:image" content="img/fluowen.png">
+  <meta property="og:url" content="https://fluowen.github.io/home/">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/fluowen.png" type="image/png">
+
+  <!-- Fonts and CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Carousel Section -->
-  <section id="carousel-section" class="section">
-    <div class="carousel-container">
-      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #A9A9A9;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/fluowen.png" alt="Fluowen Logo" style="height: 50px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Seção Sobre Nós -->
+  <section id="about" class="d-flex align-items-center justify-content-center">
+    <div class="container-fluid about-container">
+      <div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/carousel1.jpg" class="d-block w-100 carousel-img" alt="Image 1">
+            <img src="img/img01.jpg" class="d-block w-100 carousel-img" alt="Tecnologia Fluowen">
           </div>
           <div class="carousel-item">
-            <img src="img/carousel2.jpg" class="d-block w-100 carousel-img" alt="Image 2">
+            <img src="img/img02.jpg" class="d-block w-100 carousel-img" alt="Inovação Fluowen">
           </div>
           <div class="carousel-item">
-            <img src="img/carousel3.jpg" class="d-block w-100 carousel-img" alt="Image 3">
+            <img src="img/img03.jpg" class="d-block w-100 carousel-img" alt="Serviços Fluowen">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </a>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
-      <a href="https://wa.me/5511915954848" class="btn-contact">Entre em Contato</a>
+      <a href="https://wa.me/5511915954848" class="btn btn-contact" aria-label="Entre em Contato" style="background-color: #A9A9A9;">Entre em Contato</a>
     </div>
   </section>
-
   <!-- Services Section -->
-  <section id="services" class="section">
-    <div class="service-item">
-      <img src="img/service1.jpg" alt="Service 1">
-      <div class="service-description">
-        <h3 class="service-title">Sites, Landing Pages e E-Commerce</h3>
-        <p class="service-text">Desenvolvemos sites modernos, landing pages otimizadas e e-commerce para impulsionar seu negócio digital.</p>
-      </div>
+<section id="services" class="section">
+  <div class="service-item">
+    <img src="img/service1.jpg" alt="Service 1">
+    <div class="service-description">
+      <h3 class="service-title">Service 1</h3>
+      <p class="service-text">Description for Service 1.</p>
     </div>
-    <div class="service-item">
-      <img src="img/service2.jpg" alt="Service 2">
-      <div class="service-description">
-        <h3 class="service-title">Chatbots</h3>
-        <p class="service-text">Criação de chatbots para vendas e atendimento ao cliente, oferecendo suporte rápido e eficaz 24 horas.</p>
-      </div>
+  </div>
+  <div class="service-item">
+    <img src="img/service2.jpg" alt="Service 2">
+    <div class="service-description">
+      <h3 class="service-title">Service 2</h3>
+      <p class="service-text">Description for Service 2.</p>
     </div>
-    <div class="service-item">
-      <img src="img/service3.jpg" alt="Service 3">
-      <div class="service-description">
-        <h3 class="service-title">Marketing Digital</h3>
-        <p class="service-text">Estrategias personalizadas de marketing digital para aumentar visibilidade, engajamento e conversão da sua marca.</p>
-      </div>
+  </div>
+  <div class="service-item">
+    <img src="img/service3.jpg" alt="Service 3">
+    <div class="service-description">
+      <h3 class="service-title">Service 3</h3>
+      <p class="service-text">Description for Service 3.</p>
     </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer id="footer">
-    <div class="footer-left">
-      <img src="img/fluowen.png" alt="Fluowen Logo">
+  </div>
+</section>
+  <!-- Rodapé -->
+  <footer id="footer" class="d-flex justify-content-between align-items-center" style="background-color: #A9A9A9; padding: 20px;">
+    <div><img src="img/fluowen.png" alt="Fluowen Logo" style="height: 50px;"></div>
+    <div>
+      <a href="https://wa.me/5511915954848" aria-label="Telefone para Contato no WhatsApp" style="color: white; text-decoration: none;">+55(11)91595-4848</a>
     </div>
-    <div class="footer-center">
-      <a href="https://wa.me/5511915954848" aria-label="Contato via WhatsApp">+55 (11) 91595-4848</a>
-    </div>
-    <div class="footer-right">
-      <a href="mailto:contact@fluowen.com" aria-label="Enviar email">contact@fluowen.com</a>
+    <div>
+      <a href="mailto:contact@fluowen.com" aria-label="Envie um Email" style="color: white; text-decoration: none;">contact@fluowen.com</a>
     </div>
   </footer>
 
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
