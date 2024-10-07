@@ -36,6 +36,7 @@ html, body {
   text-decoration: none;
 }
 
+/* Services Section */
 #services {
   background-color: #f4f4f4;
   padding: 20px;
@@ -43,19 +44,19 @@ html, body {
 
 .service-item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically */
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .service-item img {
-  width: 45%;
+  width: 80%;
   height: auto;
+  margin-bottom: 20px;
 }
 
 .service-description {
-  width: 50%;
-  text-align: right;
+  text-align: center;
 }
 
 .service-description .btn {
