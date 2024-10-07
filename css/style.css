@@ -50,9 +50,7 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 1vh;
-  padding-left: 1vh;
-  padding-right: 1vh;
+  padding: 1vh;
 }
 
 .service-item {
