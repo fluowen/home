@@ -1,221 +1,141 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  .section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .btn-contact {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    background-color: rgba(128, 128, 128, 0.5);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    z-index: 10;
-  }
-  
-  #nossos-servicosHere is the **complete CSS** with the new **Nossos Serviços**, **About**, and **Clientes** sections:
-  
-  ```css
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  .section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 1vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .btn-contact {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    background-color: rgba(128, 128, 128, 0.5);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    z-index: 10;
-  }
-  
-  /* Nossos Serviços Section */
-  #nossos-servicos {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5vh;
-  }
-  
-  .title-container {
-    width: 35%;
-  }
-  
-  .title-container h2 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .text-container {
-    width: 65%;
-  }
-  
-  .text-container p {
-    font-size: 1.25rem;
-    line-height: 1.6;
-  }
-  
-  /* Services Section */
-  #services {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2vh 0;
-  }
-  
-  .service-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  .service-item img {
-    width: 30%;
-    height: auto;
-  }
-  
-  .service-description {
-    width: 65%;
-    text-align: left;
-  }
-  
-  .service-description .btn {
-    margin-top: 10px;
-  }
-  
-  /* About Section */
-  #about-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5vh;
-  }
-  
-  .about-image img {
-    width: 35%;
-  }
-  
-  .about-description {
-    width: 65%;
-  }
-  
-  .about-description h3 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  
-  .about-description p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  /* Clientes Section */
-  #clientes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5vh;
-  }
-  
-  .clientes-title h2 {
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .clientes-carousel {
-    width: 65%;
-  }
-  
-  .carousel-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .carousel-inner img {
-    width: 30%;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #A9A9A9;
-    padding: 2vh;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  footer img {
-    height: 5vh;
-  }  
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-contact {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+#our-services {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5vh;
+}
+
+.title-container {
+  width: 35%;
+}
+
+.title-container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-container {
+  width: 65%;
+}
+
+.text-container p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+#services .service-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#services .service-item img {
+  width: 30%;
+}
+
+#services .service-description {
+  width: 65%;
+}
+
+#services .service-description .btn {
+  margin-top: 10px;
+}
+
+#about-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh;
+}
+
+.about-image img {
+  width: 35%;
+}
+
+.about-description {
+  width: 65%;
+}
+
+.about-description h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-description p {
+  font-size: 1.2rem;
+}
+
+#clients {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vh;
+}
+
+.clients-title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.clients-carousel {
+  width: 65%;
+}
+
+footer {
+  background-color: #A9A9A9;
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  height: 5vh;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
