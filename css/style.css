@@ -37,21 +37,22 @@ body, html {
 
 .service-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* Aligns image and text horizontally */
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 40px;
 }
 
 .service-item img {
-  width: 50%;
+  width: 45%; /* Image takes 45% of the width */
   height: auto;
   object-fit: cover;
 }
 
 .service-description {
-  max-width: 600px;
-  text-align: center;
-  margin-top: 20px;
+  width: 50%; /* Text content takes 50% */
+  text-align: left;
+  margin-left: 20px; /* Adds space between the image and text */
 }
 
 .service-title {
