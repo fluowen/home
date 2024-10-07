@@ -13,7 +13,7 @@ body {
 
 .nav-link {
   font-size: 1.2rem;
-  color: #fff !important;
+  color: #A9A9A9;
 }
 
 /* Seção Sobre Nós */
@@ -102,13 +102,13 @@ p {
 /* Rodapé */
 #footer {
   background-color: #A9A9A9; /* Cor cinza do logo aplicada ao rodapé */
-  color: white;
+  color: #A9A9A9;
   height: 100px;
   padding: 20px 2%;
 }
 
 #footer a {
-  color: white;
+  color: #A9A9A9;
   text-decoration: none;
 }
 
