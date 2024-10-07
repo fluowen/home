@@ -20,7 +20,7 @@ body {
 /* Seção Sobre Nós */
 #about {
   min-height: 100vh;
-  background-color: #FFFFFF; /* Fundo branco */
+  background-color: #FFFFFF;
   padding: 0;
   position: relative;
   z-index: 1;
@@ -54,7 +54,7 @@ body {
   left: 5%;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #808080; /* Cor cinza */
+  background-color: #808080; /* Cinza */
   color: white;
   padding: 15px 30px;
   border-radius: 5px;
@@ -73,7 +73,7 @@ body {
 /* Seção Serviços */
 #services {
   min-height: 100vh;
-  background-color: #FFFFFF; /* Fundo branco */
+  background-color: #FFFFFF;
   padding-top: 20px;
 }
 
@@ -100,7 +100,7 @@ p {
 
 /* Rodapé */
 #footer {
-  background-color: #A9A9A9; /* Cor cinza do logo */
+  background-color: #A9A9A9; /* Cor cinza */
   color: white;
   height: 100px;
   padding: 20px 2%;
@@ -115,21 +115,10 @@ p {
   text-decoration: underline;
 }
 
-/* Evitar sobreposição entre seções */
-section {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-#about, #services {
-  min-height: 100vh;
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
   .carousel-img {
-    height: 50vh; /* Ajuste para telas menores */
+    height: 50vh;
   }
 
   .btn-contact {
