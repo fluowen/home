@@ -100,33 +100,26 @@ footer a {
 #our-services {
   display: flex;
   justify-content: space-between;
+  padding: 2vh 10vw; /* Reduced padding */
   width: 100%;
-  padding: 5vh;
+  height: auto; /* Ensure section adjusts to content */
 }
 
 .title-container {
   width: 35%;
 }
 
-.title-container h2 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
 .text-container {
   width: 65%;
-}
-
-.text-container p {
-  font-size: 1.25rem;
-  line-height: 1.6;
 }
 
 /* About Section */
 #about-section {
   display: flex;
   justify-content: space-between;
-  padding: 5vh;
+  padding: 2vh 10vw; /* Shrink to content */
+  width: 100%;
+  height: auto;
 }
 
 .about-image img {
@@ -137,25 +130,13 @@ footer a {
   width: 65%;
 }
 
-.about-description h3 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.about-description p {
-  font-size: 1.2rem;
-}
-
 /* Clients Section */
 #clients {
   display: flex;
   justify-content: space-between;
-  padding: 5vh;
-}
-
-.clients-title h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  padding: 2vh 10vw; /* Shrink section size */
+  width: 100%;
+  height: auto;
 }
 
 .clients-carousel {
